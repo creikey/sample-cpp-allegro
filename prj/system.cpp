@@ -15,6 +15,7 @@ void System::init()
     {
         INITERROR("al_install_mouse");
     }
+    al_set_new_display_flags(conf.displayFlags);
     disp = al_create_display(conf.dims.x, conf.dims.y);
     if (!disp)
     {
